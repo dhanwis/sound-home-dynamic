@@ -1,0 +1,36 @@
+{% load static %}
+<!--=============================
+    Footer Area
+==============================-->
+<footer class="footer-wrapper footer-layout3">
+    <div class="widget-area">
+        <div class="container">
+            <div class="text-center mb-40 wow fadeInUp" data-wow-delay="0.1s">
+                <img src="{% static 'user_app/assets/img/mine/logo-5.png' %}" alt="sound" style="max-width: 110px;">
+            </div>
+            <div class="footer-menu wow fadeInUp" data-wow-delay="0.2s">
+                <ul>
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="{% url 'about' %}">About</a></li>
+                    <li><a href="{% url 'products' %}">Product</a></li>
+                    <li><a href="{% url 'projects' %}">Project</a></li>
+                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                </ul>
+            </div>
+            <p class="footer-info2 wow fadeInUp" data-wow-delay="0.3s">47/2768. South Complex, Opp.G Mall South Bazar, Kannur-2</p>
+            <p class="footer-info2 wow fadeInUp" data-wow-delay="0.3s"><a href="#">soundhomeknr@gmail.com</a></p>
+            <p class="footer-info2 wow fadeInUp" data-wow-delay="0.3s"><a href="#">9446323885, 0497 2761176 </a></p>
+            <div class="th-social mt-25 wow fadeInUp" data-wow-delay="0.3s">
+                <a target="_blank" href="https://www.facebook.com/people/Sound-Home-Audio-Visual-Solutions/61556144601581/"><i class="fab fa-facebook-f"></i></a>
+                <a target="_blank" href="https://skype.com/"><i class="fa-brands fa-whatsapp"></i></a>
+                <a target="_blank" href="https://twitter.com/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="copyright-wrap">
+        <div class="container">
+            <p class="copyright-text">Copyright By © <a href="{% url 'home' %}" style="color: #e7b140;">Dhanwis</a> - 2024
+            </p>
+        </div>
+    </div>
+</footer>

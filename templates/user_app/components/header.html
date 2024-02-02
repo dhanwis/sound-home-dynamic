@@ -1,0 +1,197 @@
+{% load static %}
+<!--==============================
+    Mobile Menu
+  ============================== -->
+  <div class="th-menu-wrapper">
+    <div class="th-menu-area text-center">
+        <button class="th-menu-toggle"><i class="fal fa-times"></i></button>
+        <div class="mobile-logo">
+            <a href="{% url 'home' %}"><img src="{% static 'user_app/assets/img/mine/logo-5.png' %}" alt="sound" style="max-width: 110px;"></a>
+        </div>
+        <div class="th-mobile-menu">
+            <ul>
+                <li class="menu-item-has-children">
+                    <a href="{% url 'home' %}"
+                        class="{% if current_page == 'home' %}active-mine-mob{% endif %}"
+                        >Home
+                    </a>
+
+                </li>
+                <li>
+                    <a href="{% url 'about' %}"
+                        class="{% if current_page == 'about' %}active-mine-mob{% endif %}"
+                        >About
+                    </a>
+                </li>
+                <li class="menu-item-has-children">
+                    <a href="{% url 'products' %}"
+                        class="{% if current_page == 'products' %}active-mine-mob{% endif %}"
+                        >Product
+                    </a>
+
+                </li>
+                <li class="menu-item-has-children">
+                    <a href="{% url 'projects' %}"
+                        class="{% if current_page == 'projects' %}active-mine-mob{% endif %}"
+                        >Project
+                    </a>
+                </li>
+
+                <li>
+                    <a href="{% url 'contact' %}"
+                        class="{% if current_page == 'contact' %}active-mine-mob{% endif %}"
+                        >Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--==============================
+Header Area
+==============================-->
+{% if current_page == 'home'%}
+    <header class="th-header header-layout4">
+        <div class="header-top" style="background-color: #272727;">
+            <div class="th-container container">
+                <div class="social-box">
+                    <div class="th-social">
+                        <a target="_blank" href="https://www.facebook.com/people/Sound-Home-Audio-Visual-Solutions/61556144601581/"><i class="fab fa-facebook-f"
+                                style="color: #0c87ef;"></i></a>
+                        <a target="_blank" href="https://skype.com/"><i class="fa-brands fa-whatsapp"
+                                style="color: #00d95f;"></i></a>
+                        <a target="_blank" href="https://twitter.com/"><i class="fa-brands fa-instagram"
+                                style="color: #f60577;"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sticky-wrapper">
+            <div class="sticky-active">
+                <!-- Main Menu Area -->
+                <div class="menu-area">
+                    <div class="container">
+                        <div class="row align-items-center justify-content-between">
+                            <div class="col-auto">
+                                <div class="header-logo">
+                                    <a href="{% url 'home' %}"><img src="{% static 'user_app/assets/img/mine/logo-5.png' %}" alt="sound"
+                                            style="max-width: 110px;"></a>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <nav class="main-menu d-none d-lg-inline-block">
+                                    <ul>
+                                        <li class="menu-item-has-children">
+                                            <a href="{% url 'home' %}"
+                                                class="{% if current_page == 'home' %}active-mine{% endif %}"
+                                            >Home</a>
+
+                                        </li>
+                                        <li>
+                                            <a href="{% url 'about' %}">About</a>
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a href="{% url 'products' %}">Product</a>
+
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a href="{% url 'projects' %}">Project</a>
+
+                                        </li>
+
+                                        <li>
+                                            <a href="{% url 'contact' %}">Contact</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <button type="button" class="th-menu-toggle d-inline-block d-lg-none"><i
+                                        class="far fa-bars"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+{% else %}
+    <header class="th-header header-layout1">  <!-- <header class="th-header header-layout4"> -->
+        <div class="header-top">
+            <div class="th-container container">
+                <div class="row justify-content-end justify-content-sm-between align-items-center">
+                    <div class="col-auto">
+                        <div class="header-links">
+                            <!-- <ul>
+                                <li><a href="https://www.facebook.com/">facebook</a></li>
+                                <li><a href="https://www.twitter.com/">twitter</a></li>
+                                <li><a href="https://www.instagram.com/">instagram</a></li>
+                            </ul> -->
+                        </div>
+                    </div>
+                    <div class="col-auto d-sm-block">
+                        <div class="header-links">
+                            <ul>
+                                <li><a target="_blank" href="https://www.facebook.com/people/Sound-Home-Audio-Visual-Solutions/61556144601581/"><i class="fab fa-facebook-f" style="color: #0c87ef; font-size: 25px;"></i></a></li>
+                                <li><a target="_blank" href="https://skype.com/"><i class="fa-brands fa-whatsapp" style="color: #00d95f; font-size: 25px;"></i></a></li>
+                                <li><a target="_blank" href="https://twitter.com/"><i class="fa-brands fa-instagram" style="color: #f60577; font-size: 25px;"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sticky-wrapper">
+            <div class="sticky-active">
+                <!-- Main Menu Area -->
+                <div class="menu-area">
+                    <div class="container">
+                        <div class="row align-items-center justify-content-between">
+                            <div class="col-auto">
+                                <div class="header-logo">
+                                    <a href="{% url 'home' %}"><img src="{% static 'user_app/assets/img/mine/logo-5.png' %}" alt="sound" style="max-width: 110px;"></a>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <nav class="main-menu d-none d-lg-inline-block">
+                                    <ul>
+                                        <li class="menu-item-has-children">
+                                            <a href="{% url 'home' %}">Home</a>
+                                        
+                                        </li>
+                                        <li>
+                                            <a href="{% url 'about' %}"
+                                                class="{% if current_page == 'about' %}active-mine{% endif %}"
+                                                >About
+                                            </a>
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a href="{% url 'products' %}"
+                                                class="{% if current_page == 'products' %}active-mine{% endif %}">
+                                                Product
+                                            </a>
+                                            
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a href="{% url 'projects' %}"
+                                                class="{% if current_page == 'projects' %}active-mine{% endif %}"
+                                                >Project
+                                            </a>
+                                            
+                                        </li>
+                                        
+                                        <li>
+                                            <a href="{% url 'contact' %}"
+                                                class="{% if current_page == 'contact' %}active-mine{% endif %}"
+                                                >Contact
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <button type="button" class="th-menu-toggle d-inline-block d-lg-none"><i class="far fa-bars"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+{% endif %}

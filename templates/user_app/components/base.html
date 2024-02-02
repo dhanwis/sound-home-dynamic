@@ -1,0 +1,91 @@
+<!doctype html>
+{% load static %}
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Sound Home</title>
+
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicons - Place favicon.ico in the root directory -->
+    <link rel="icon" href="{% static 'user_app/assets/img/mine/logo-5.png' %}" type="image/x-icon">
+
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="{% static 'user_app/assets/img/favicons/ms-icon-144x144.png' %}">
+    <meta name="theme-color" content="#ffffff">
+
+    <!--==============================
+	  Google Fonts
+	============================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@100;200;300;400;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!--==============================
+	    All CSS File
+	============================== -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="{% static 'user_app/assets/css/bootstrap.min.css' %}">
+    <!-- Fontawesome Icon -->
+    <link rel="stylesheet" href="{% static 'user_app/assets/css/fontawesome.min.css' %}">
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="{% static 'user_app/assets/css/magnific-popup.min.css' %}">
+    <!-- Slick Slider -->
+    <link rel="stylesheet" href="{% static 'user_app/assets/css/slick.min.css' %}">
+    <!-- Theme Custom CSS -->
+    <link rel="stylesheet" href="{% static 'user_app/assets/css/style.css' %}">
+
+</head>
+
+<body class="">
+    <!--==============================
+     Preloader
+  ==============================-->
+    <div class="preloader">
+        <button class="th-btn style3 preloaderCls">Cancel Preloader </button>
+        <div class="preloader-inner">
+            <span class="loader"></span>
+        </div>
+    </div>
+    <div class="th-cursor"></div>
+
+    {% block content %}
+
+    {% endblock content %}
+
+    <!-- Scroll To Top -->
+    <div class="scroll-top">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+                style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;">
+            </path>
+        </svg>
+    </div>
+
+    <!--==============================
+    All Js File
+    ============================== -->
+    <!-- Jquery -->
+    <script src="{% static 'user_app/assets/js/vendor/jquery-3.6.0.min.js' %}"></script>
+    <!-- Slick Slider -->
+    <script src="{% static 'user_app/assets/js/slick.min.js' %}"></script>
+    <!-- Bootstrap -->
+    <script src="{% static 'user_app/assets/js/bootstrap.min.js' %}"></script>
+    <!-- Magnific Popup -->
+    <script src="{% static 'user_app/assets/js/jquery.magnific-popup.min.js' %}"></script>
+    <!-- Counter Up -->
+    <script src="{% static 'user_app/assets/js/jquery.counterup.min.js' %}"></script>
+    <!-- Wow Animation -->
+    <script src="{% static 'user_app/assets/js/wow.min.js' %}"></script>
+    <!-- Main Js File -->
+    <script src="{% static 'user_app/assets/js/main.js' %}"></script>
+
+</body>
+
+</html>

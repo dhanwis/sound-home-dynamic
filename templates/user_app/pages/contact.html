@@ -1,0 +1,99 @@
+{% extends "user_app/components/base.html" %}
+{% load static %}
+{% block content %}
+
+{% include 'user_app/components/header.html' %}
+<!--==============================
+        Breadcumb
+    ============================== -->
+<div class="container th-container2">
+    <div class="breadcumb-wrapper  " data-bg-src="{% static 'user_app/assets/img/mine/breadcumb-2.png' %}">
+        <h1 class="breadcumb-title">Contact Us</h1>
+        <ul class="breadcumb-menu">
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li>Contact Us</li>
+        </ul>
+    </div>
+</div>
+<!--==============================
+        contact Area  
+    ==============================-->
+<section class="space">
+    <div class="container">
+        {% include 'user_app/components/alert.html' %}
+        <div class="space-bottom">
+            <div class="footer-info-box wow fadeInUp" data-wow-delay="0.2s">
+                <div class="row gx-0 justify-content-between">
+                    <div class="col-lg-4 col-sm-auto">
+                        <div class="footer-box">
+                            <h6 class="footer-info has-icon">
+                                <i class="far fa-envelope"></i>
+                                <a class="link" href="mailto:soundhomeknr@gmail.com">soundhomeknr@gmail.com</a>
+                                <!-- <a class="link" href="mailto:artraz@artrazmail.com">artraz@artrazmail.com</a> -->
+                            </h6>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md order-3 order-md-0">
+                        <div class="footer-box">
+                            <h6 class="footer-info has-icon">
+                                <i class="far fa-phone"></i>
+                                <a class="link" href="#">9446323885</a>
+                                <a class="link" href="#">0497 2761176</a>
+                            </h6>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-auto">
+                        <div class="footer-box" style="border-radius: 10px;">
+                            <h6 class="footer-info has-icon">
+                                <i class="far fa-location-dot"></i>
+                                <a class="link" href="#" style="font-size: large;">47/2768. South Complex, Opp.G Mall South Bazar, Kannur-2</a>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-between">
+            <div class="col-xl-6 mb-5 mb-xl-0 wow fadeInLeft" data-wow-delay="0.2s">
+                <span class="h6 mt-n2 mb-3 text-theme">Contact Us</span>
+                <h2 class="sec-title mb-45">Do you need any help? <br>Send <span class="text-theme">Message.</span></h2>
+                
+                <form method="post" class="contact-form ">
+                    {% csrf_token %}
+                    <div class="row">
+                        <div class="form-group col-12">
+                            <input type="text" class="form-control" required name="name" id="name" placeholder="Your Name">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control" required name="phone" id="phone" placeholder="Your Number">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="email" class="form-control" required name="email" id="email"
+                                placeholder="Email Address">
+                        </div>
+
+                        <div class="form-group col-12">
+                            <textarea required name="message" id="message" cols="30" rows="3" class="form-control"
+                                placeholder="Message"></textarea>
+                        </div>
+                        <div class="form-btn col-12 mt-10">
+                            <button type="submit" class="th-btn"><span class="line left"></span> Message Us <span
+                                class="line"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <p class="form-messages mb-0 mt-3"></p>
+                </form>
+
+            </div>
+            <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.2s">
+                <div class="contact-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15617.429712668205!2d75.3742025!3d11.8801808!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba43dc9d17e46af%3A0xe7d77a725d20b924!2sSound%20Home%20Audio%20Visual%20Solutions!5e0!3m2!1sen!2sin!4v1706762412330!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+{% include 'user_app/components/footer.html' %}
+{% endblock content %}

@@ -1,0 +1,52 @@
+{% extends "user_app/components/base.html" %}
+{% load static %}
+{% block content %}
+
+{% include 'user_app/components/header.html' %}
+<!--==============================
+        Breadcumb
+    ============================== -->
+<div class="container th-container2">
+    <div class="breadcumb-wrapper  " data-bg-src="{% static 'user_app/assets/img/mine/breadcumb-2.png' %}">
+        <h1 class="breadcumb-title">Products</h1>
+        <ul class="breadcumb-menu">
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li>Products</li>
+        </ul>
+    </div>
+</div>
+
+<!--==============================
+    Prodects
+    ==============================-->
+<section class="pt-5">
+    <div class="container">
+        <h2 class="sec-title text-center mb-4 wow fadeInUp" data-wow-delay="0.2s">Our <span
+                class="text-transparent">Products</span></h2>
+        <div class="row">
+            {% for product in products %}
+                <div class="col-md-6 pb-3">
+                    <div class="card" style="height: 100%;">
+                        <img src="{{ product.image.url }}" class="card-img-top" alt="...">
+                        {% if product.head or product.description %}
+                            <div class="card-body">
+                                {% if product.head %}
+                                    <h5 class="card-title">{{ product.head }}</h5>
+                                {% endif %}
+                                {% if product.description %}
+                                    <p class="card-text">
+                                        {{ product.description }}
+                                    </p>
+                                {% endif %}
+                            </div>
+                        {% endif %}
+                    </div>
+                </div>
+            {% endfor %}
+
+            
+        </div>
+    </div>
+</section>
+{% include 'user_app/components/footer.html' %}
+{% endblock content %}

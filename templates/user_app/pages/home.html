@@ -1,0 +1,369 @@
+{% extends "user_app/components/base.html" %}
+{% load static %}
+{% block content %}
+
+{% include 'user_app/components/header.html' %}
+
+<!--==============================
+Hero Area
+==============================-->
+<div class="th-hero-wrapper hero-4">
+    <div class="hero-slider-4 th-carousel" id="heroSlide4" data-fade="false" data-slide-show="1">
+        <div>
+            <div class="th-hero-slide">
+                <div class="th-hero-bg" data-bg-src="{% static 'user_app/assets/img/mine/home-7.jpg' %}"
+                    data-opacity="6"></div>
+                <div class="container">
+                    <div class="hero-style4">
+                        <span class="h4 hero-subtitle" data-ani="slideinup" data-ani-delay="0.1s">Elevate Your Home Entertainment with Sound Home.</span>
+                        <h1 class="hero-title" data-ani="slideinup" data-ani-delay="0.3s">Experience</h1>
+                        <h1 class="hero-title" data-ani="slideinup" data-ani-delay="0.5s">The Ultimate</h1>
+                        <h1 class="hero-title text-transparent" data-ani="slideinup" data-ani-delay="0.5s">Enjoyment</h1>
+                        <a href="{% url 'products' %}" class="th-btn" data-ani="slideinup" data-ani-delay="0.7s"><span
+                                class="line left"></span> Get a Quet <span class="line"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="th-hero-slide">
+                <div class="th-hero-bg" data-bg-src="{% static 'user_app/assets/img/mine/home-2.jpg' %}"
+                    data-opacity="6"></div>
+                <div class="container">
+                    <div class="hero-style4">
+                        <span class="h4 hero-subtitle" data-ani="slideinup" data-ani-delay="0.1s">Elevate Your Home Entertainment with Sound Home.</span>
+                        <h1 class="hero-title" data-ani="slideinup" data-ani-delay="0.3s">Experience</h1>
+                        <h1 class="hero-title" data-ani="slideinup" data-ani-delay="0.5s">The Ultimate</h1>
+                        <h1 class="hero-title text-transparent" data-ani="slideinup" data-ani-delay="0.5s">Enjoyment</h1>
+                        <a href="{% url 'products' %}" class="th-btn" data-ani="slideinup" data-ani-delay="0.7s"><span
+                                class="line left"></span> Get a Quet <span class="line"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="th-hero-slide">
+                <div class="th-hero-bg" data-bg-src="{% static 'user_app/assets/img/mine/home-3.png' %}"
+                    data-opacity="6"></div>
+                <div class="container">
+                    <div class="hero-style4">
+                        <span class="h4 hero-subtitle" data-ani="slideinup" data-ani-delay="0.1s">Elevate Your Home Entertainment with Sound Home.</span>
+                        <h1 class="hero-title" data-ani="slideinup" data-ani-delay="0.3s">Experience</h1>
+                        <h1 class="hero-title" data-ani="slideinup" data-ani-delay="0.5s">The Ultimate</h1>
+                        <h1 class="hero-title text-transparent" data-ani="slideinup" data-ani-delay="0.5s">Enjoyment</h1>
+                        <a href="{% url 'products' %}" class="th-btn" data-ani="slideinup" data-ani-delay="0.7s"><span
+                                class="line left"></span> Get a Quet <span class="line"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="icon-box">
+        <button data-slick-prev="#heroSlide4" class="slick-arrow default cursor-btn"><i
+                class="fal fa-long-arrow-left"></i></button>
+        <button data-slick-next="#heroSlide4" class="slick-arrow default cursor-btn"><i
+                class="fal fa-long-arrow-right"></i></button>
+    </div>
+</div>
+<!--======== / Hero Section ========--><!--==============================
+Feature Area  
+==============================-->
+<!-- <section class="space-top">
+    <div class="container">
+        <div class="row gy-4">
+            <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="feature-card">
+                    <div class="feature-card_icon shape-icon">
+                        <img class="svg-img" src="{% static 'user_app/assets/img/icon/feature_card_1.svg" alt="icon">
+                    </div>
+                    <h3 class="feature-card_title">Reasonable Prices</h3>
+                    <p class="feature-card_text">We see architecture as the composition of all elements that define a particular space and inform the character of a building at the time it is conceived: its structure.</p>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="feature-card">
+                    <div class="feature-card_icon shape-icon">
+                        <img class="svg-img" src="{% static 'user_app/assets/img/icon/feature_card_2.svg" alt="icon">
+                    </div>
+                    <h3 class="feature-card_title">Exclusive Design</h3>
+                    <p class="feature-card_text">We see architecture as the composition of all elements that define a particular space and inform the character of a building at the time it is conceived: its structure.</p>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="feature-card">
+                    <div class="feature-card_icon shape-icon">
+                        <img class="svg-img" src="{% static 'user_app/assets/img/icon/feature_card_3.svg" alt="icon">
+                    </div>
+                    <h3 class="feature-card_title">Expert Managements</h3>
+                    <p class="feature-card_text">We see architecture as the composition of all elements that define a particular space and inform the character of a building at the time it is conceived: its structure.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+<!--==============================
+About Area  
+==============================-->
+<div class="space" id="about-sec">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-xl-6 mb-5 mb-xl-0 wow fadeInLeft" data-wow-delay="0.2s">
+                <div class="img-box1">
+                    <div class="img1">
+                        <img src="{% static 'user_app/assets/img/mine/home-11.jpg' %}" alt="About">
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.2s">
+                <p class="sub-title">Take Part in Unmatched Visual and Aural Experiences</p>
+                <h2 class="sec-title mb-40">About <span class="text-transparent">US</span></h2>
+                <p class="mb-30">We are audio video installation company specializes 
+                    in meeting the needs of its clients. We take great pleasure in providing 
+                    excellent customer service and paying close attention to detail. 
+                    Our skilled staff can handle all elements of design, supply, and 
+                    installations for both residential and commercial projects. 
+                    We can assist you with any type of installation needs, including 4K and 8K smart 
+                    TV installations, projector installations, restaurant/bar AV installations, 
+                    and basic TV home theater setups.
+
+                </p>
+                <p class="mb-40">You may feel secure knowing that we are completely 
+                    qualified, insured, and licensed while your installation is being done. 
+                    We take pride in our work and make sure that every detail is properly attended to. 
+                    We prioritize the demands of our clients and promise complete fulfillment.</p>
+                <a href="{% url 'about' %}" class="th-btn"><span class="line left"></span> Learn More <span
+                        class="line"></span></a>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="shape-mockup jump" data-top="0" data-right="0"><img src="{% static 'user_app/assets/img/shape/shape_3.png' %}" alt="shape"></div> -->
+</div>
+<!--==============================
+Team Area  
+==============================-->
+<section class=" ">
+    <div class="container">
+        <h2 class="sec-title text-center mb-4 wow fadeInUp" data-wow-delay="0.2s">Our <span
+                class="text-transparent">brands</span></h2>
+        <div class="row th-carousel" data-slide-show="4" data-lg-slide-show="3" data-md-slide-show="2">
+            <!-- Single Item -->
+            <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="team-card  ">
+
+                    <div class="team-img">
+                        <img src="{% static 'user_app/assets/img/mine/yamaha-2.jpg' %}" alt="Team">
+                    </div>
+                </div>
+            </div>
+            <!-- Single Item -->
+            <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="team-card  ">
+
+                    <div class="team-img">
+                        <img src="{% static 'user_app/assets/img/mine/jbl-1.jpg' %}" alt="Team">
+                    </div>
+                </div>
+            </div>
+            <!-- Single Item -->
+            <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="team-card  ">
+
+                    <div class="team-img">
+                        <img src="{% static 'user_app/assets/img/mine/denon.jpg' %}" alt="Team">
+                    </div>
+                </div>
+            </div>
+            <!-- Single Item -->
+            <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="team-card  ">
+
+                    <div class="team-img">
+                        <img src="{% static 'user_app/assets/img/mine/benq.jpg' %}" alt="Team">
+                    </div>
+                </div>
+            </div>
+            <!-- Single Item -->
+            <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="team-card  ">
+
+                    <div class="team-img">
+                        <img src="{% static 'user_app/assets/img/mine/polkaudio.jpg' %}" alt="Team">
+                    </div>
+                </div>
+            </div>
+            <!-- Single Item -->
+            <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="team-card  ">
+
+                    <div class="team-img">
+                        <img src="{% static 'user_app/assets/img/mine/jamo.jpg' %}" alt="Team">
+                    </div>
+                </div>
+            </div>
+            <!-- Single Item -->
+            <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="team-card  ">
+
+                    <div class="team-img">
+                        <img src="{% static 'user_app/assets/img/mine/klipsch.jpg' %}" alt="Team">
+                    </div>
+                </div>
+            </div>
+            <!-- Single Item -->
+            <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="team-card  ">
+
+                    <div class="team-img">
+                        <img src="{% static 'user_app/assets/img/mine/marantz.png' %}" alt="Team">
+                    </div>
+                </div>
+            </div>
+            <!-- Single Item -->
+            <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="team-card  ">
+
+                    <div class="team-img">
+                        <img src="{% static 'user_app/assets/img/mine/espon.png' %}" alt="Team">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--==============================
+Why choos us
+==============================-->
+<section class="space">
+    <div class="container">
+        <div class="row mb-40 align-items-center">
+            <div class="col-xl-6 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="team-details-img">
+                    <img class="w-100" src="{% static 'user_app/assets/img/mine/home-18.png' %}" alt="team image">
+                </div>
+            </div>
+            <div class="col-xl-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="team-about">
+                    <h2 class="sec-title mb-40">Why <span class="text-transparent">Choose US</span></h2>
+
+                    <p class="mb-20">Our professional installation services are the first step in our dedication to providing an unmatched home entertainment experience. Our group of knowledgeable specialists is committed to making sure everything works perfectly, carefully positioning each part to provide the best possible sound and visual immersion. We know that meticulousness is essential to producing a remarkable home theater, and our experts have a lot of experience to ensure precisely that..</p>
+                    <p class="mb-25">At Sound Home, we place a high priority on client happiness. Join the happy clients who have trusted us to transform their houses into the greatest entertainment havens. By creating a customized haven where you can lose yourself in the world of entertainment without ever leaving the comforts of your home, we take delight in continuously exceeding expectations. Choose Main Home Theaters to transform your house into the ideal setting for movie experiences with a harmonious blend of professional installation and the pure joy of happy customers.</p>
+
+                    <a href="{% url 'contact' %}" class="th-btn"><span class="line left"></span> Quick Contact <span
+                            class="line"></span></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!--==============================
+Product Area  
+==============================-->
+<section class="space-bottom overflow-hidden" >
+    <div class="container">
+        <div class="row justify-content-md-between align-items-end">
+            <div class="col-md-8 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="title-area">
+                    <h2 class="sec-title">Our
+                        <span class="text-transparent">Products</span>
+                    </h2>
+                </div>
+            </div>
+            <div class="col-auto mt-n4 mt-lg-0 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="sec-btn">
+                    <a href="{% url 'products' %}" class="link-btn">View The Products</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container th-container3">
+        <div class="project-slide-wrap">
+            <div class="row" id="projectSlide3">
+                <div class="col-lg-6">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="{% static 'user_app/assets/img/mine/product-4.png' %}" alt="project image">
+                        </div>
+                        <!-- <h3 class="h5 project-title"><a href="#">Floorstanding Speaker</a></h3>
+                        <div class="project-number">01</div> -->
+                        <h3 class="h5 project-title"><a href="#">Floorstanding Speaker</a></h3>
+                        <p class="project-map"></i>Polk Audio Signature Elite ES60 High-Resolution Floorstanding Speaker (Pair)</p>
+                            
+                        
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="{% static 'user_app/assets/img/mine/product-5.png' %}" alt="project image">
+                        </div>
+                        <!-- <h3 class="h5 project-title"><a href="#">UHD1 Projector</a></h3>
+                        <div class="project-number">02</div> -->
+                        <h3 class="h5 project-title"><a href="#">UHD1 Projector</a></h3>
+                        <p class="project-map"></i>YAMAHA RX-A4A AVENTAGE 7.1-Channel AV Receiver with MusicCast</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="{% static 'user_app/assets/img/mine/product-6.png' %}" alt="project image">
+                        </div>
+                        <!-- <h3 class="h5 project-title"><a href="#">AV Receiver with MusicCast</a></h3>
+                        <div class="project-number">03</div> -->
+                        <h3 class="h5 project-title"><a href="#">AV Receiver with MusicCast</a></h3>
+                        <p class="project-map"></i>Epson EH-TW9400 4K PRO-UHD 3LCD Home Theatre Projector</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-nav-wrap">
+                <div class="slider-nav">
+                    <button data-slick-prev="#projectSlide3" class="nav-btn"><i
+                            class="fal fa-long-arrow-left"></i></button>
+                    <div class="custom-dots"></div>
+                    <button data-slick-next="#projectSlide3" class="nav-btn"><i
+                            class="fal fa-long-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--==============================
+    Project
+    ==============================-->
+<section class="">
+    <div class="container">
+        <h2 class="sec-title text-center mb-4 wow fadeInUp" data-wow-delay="0.2s">FEATURED <span
+                class="text-transparent">Projects</span></h2>
+        <div class="row">
+            <div class="col-md-6 pb-3">
+                <div class="card">
+                    <img src="{% static 'user_app/assets/img/mine/home-13.png' %}" class="card-img-top" alt="...">
+                    
+                </div>
+            </div>
+            <div class="col-md-6 pb-3">
+                <div class="card">
+                    <img src="{% static 'user_app/assets/img/mine/home-14.png' %}" class="card-img-top" alt="...">
+                    
+                </div>
+            </div>
+            <div class="col-md-6 pb-3">
+                <div class="card">
+                    <img src="{% static 'user_app/assets/img/mine/home-15.png' %}" class="card-img-top" alt="...">
+                    
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="{% static 'user_app/assets/img/mine/home-16.png' %}" class="card-img-top" alt="...">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% include 'user_app/components/footer.html' %}
+
+{% endblock content %}

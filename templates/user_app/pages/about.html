@@ -1,0 +1,94 @@
+{% extends "user_app/components/base.html" %}
+{% load static %}
+{% block content %}
+
+{% include 'user_app/components/header.html' %}
+
+<!--==============================
+        Breadcumb
+    ============================== -->
+<div class="container th-container2">
+    <div class="breadcumb-wrapper  " data-bg-src="{% static 'user_app/assets/img/mine/breadcumb-2.png' %}">
+        <h1 class="breadcumb-title">About Us</h1>
+        <ul class="breadcumb-menu">
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li>About Us</li>
+        </ul>
+    </div>
+</div>
+<!--==============================
+    About Area  
+    ==============================-->
+<div class="space-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
+                <div class="img-box3">
+                    <div class="img1">
+                        <img src="{% static 'user_app/assets/img/mine/about-1.png' %}" alt="About">
+                    </div>
+                    <!-- <div class="img2">
+                        <img src="{% static 'user_app/assets/img/normal/about_2_2.jpg' %}" alt="About">
+                    </div> -->
+                </div>
+            </div>
+            <div class="col-xl-6 align-self-center wow fadeInRight" data-wow-delay="0.2s">
+
+                <p class="sub-title">Immerse Yourself in Unparalleled Audio-Visual Experiences</p>
+                <h2 class="sec-title mb-40">Smart Home 
+                    <span class="text-theme"> Integration</span>
+                </h2>
+                <p class="mb-4"> Seamlessly integrate your home theater into your smart home ecosystem. Control lighting, temperature, and audio settings with a touch or voice command..</p>
+                <p class="mb-40">Enjoy stunning visuals with our 4K Ultra HD projectors. Whether it's movies, sports, or gaming, witness every detail come to life on the big screen.</p>
+                <a href="#" class="th-btn"><span class="line left"></span> Get a Quet <span
+                        class="line"></span></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--==============================
+    Feature Area  
+    ==============================-->
+<section class="pt-5 pb-5">
+    <div class="container">
+        <div class="row gy-4">
+            <div class="col-xl-4 col-md-6 wow fadeInUp text-center" data-wow-delay="0.2s">
+                <div class="feature-card">
+                    <div class="feature-card_icon shape-icon d-flex justify-content-center">
+                        <img class="svg-img" src="{% static 'user_app/assets/img/mine/vision.png' %}" style="max-width: 40%;" alt="icon">
+                    </div>
+                    <h3 class="feature-card_title">our vision</h3>
+                    <p class="feature-card_text">We envision pioneering home entertainment solutions, 
+                        redefining audio-visual experiences. Our goal is to transform every home into 
+                        an entertainment haven, setting new standards in technology and excellence.</p>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 wow fadeInUp text-center" data-wow-delay="0.3s">
+                <div class="feature-card">
+                    <div class="feature-card_icon shape-icon d-flex justify-content-center">
+                        <img class="svg-img" src="{% static 'user_app/assets/img/mine/mission.png' %}" style="max-width: 40%;" alt="icon">
+                    </div>
+                    <h3 class="feature-card_title">Our Mission</h3>
+                    <p class="feature-card_text">Our mission is to provide unparalleled home entertainment through 
+                        expert installation, innovative design, and relentless customer satisfaction. 
+                        We aim to exceed expectations, making us the go-to for cinematic experiences.</p>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 wow fadeInUp text-center" data-wow-delay="0.4s">
+                <div class="feature-card">
+                    <div class="feature-card_icon shape-icon d-flex justify-content-center">
+                        <img class="svg-img" src="{% static 'user_app/assets/img/mine/quality.png' %}" style="max-width: 40%;" alt="icon">
+                    </div>
+                    <h3 class="feature-card_title">Quality</h3>
+                    <p class="feature-card_text">Quality is the cornerstone of our services. 
+                        We're dedicated to delivering products reflecting the highest standards 
+                        of craftsmanship, reliability, and technological advancement.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% include 'user_app/components/footer.html' %}
+
+{% endblock content %}
